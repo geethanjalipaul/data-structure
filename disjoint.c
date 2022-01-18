@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 struct DisjSet
 {
 int parent[10];
@@ -65,7 +64,6 @@ dis.rank[yset]=-1;
 int main()
 {
 int x,y,n,ch,wish;
-clrscr();
 printf("How many elements?");
 scanf("%d",&dis.n);
 makeSet();
