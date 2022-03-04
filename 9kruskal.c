@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #define MAX 30
 typedef struct edge
 {
@@ -91,7 +90,6 @@ void print()
 void main()
 {
 	int i,j,total_cost;
-	clrscr();
 	n=6;
 	Graph[0][0]=0;
 	Graph[0][1]=4;
@@ -142,5 +140,4 @@ void main()
 	Graph[5][6]=0;
 	kruskalAlgo();
 	print();
-	getch();
 }

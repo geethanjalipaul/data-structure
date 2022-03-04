@@ -8,7 +8,6 @@ int a[]={0,0,0,0,0,0,0,0,0},b[]={0,0,0,0,0,0,0,0,0};
 void main()
 {
 int ch,wish;
-clrscr();
 do
 {
 printf("\n___MENU___\n");
@@ -115,5 +114,4 @@ for(i=0;i<9;i++)
 printf("%d",c[i]);
 }
 output(c);
-getch();
 }

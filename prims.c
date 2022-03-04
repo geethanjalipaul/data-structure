@@ -1,10 +1,8 @@
 #include<stdio.h>
-#include<conio.h>
 int a,b,u,v,n,i,j,ne=1;
 int visited[10]={0},min,mincost=0,cost[10][10];
 void main()
 {
-	clrscr();
 	printf("\nEnter the number of nodes:");
 	scanf("%d",&n);
 	printf("\nEnter the adjacency matrix:\n");
@@ -37,7 +35,6 @@ void main()
 		cost[a][b]=cost[b][a]=999;
 	}
 	printf("\nMinimum cost:%d\n",mincost);
-	getch();
 }
 
 
