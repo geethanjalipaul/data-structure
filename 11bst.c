@@ -1,4 +1,5 @@
-#include<stdio.h>
+
+  #include<stdio.h>
 #include<stdlib.h>
 struct btnode
 {
@@ -7,8 +8,7 @@ struct btnode
   struct btnode *r;
   } *root= NULL, *temp= NULL, *t2,*t1;
   void insert();
-  void inorder(struct btnode *t);
-  void create();
+  void inorder(struct btnode *t);void create();
   void search(struct btnode *t);
   void preorder(struct btnode *t);
   void postorder(struct btnode *t);
@@ -21,10 +21,10 @@ struct btnode
      int ch;
      printf("\n*****OPERATIONS*****");
      printf("\n1.Insert an element into tree\n");
-     printf("\n3.InOrder Traversal\n");
-     printf("\n4.PreOrder Traversal\n");
-     printf("\n5.PostOrder Traversal\n");
-     printf("\n6.Exit\n");
+     printf("\n2.InOrder Traversal\n");
+     printf("\n3.PreOrder Traversal\n");
+     printf("\n4.PostOrder Traversal\n");
+     printf("\n5.Exit\n");
      while(1)
      {
        printf("\nEnter your choice:");
@@ -33,15 +33,13 @@ struct btnode
        {
 	  case 1:insert();
 	  break;
-	  case 2://del();
+	  case 2:inorder(root);
 	  break;
-	  case 3:inorder(root);
+	  case 3:preorder(root);
 	  break;
-	  case 4:preorder(root);
+	  case 4:postorder(root);
 	  break;
-	  case 5:postorder(root);
-	  break;
-	  case 6:exit(0);
+	  case 5:exit(0);
 	  default:
 	    printf("Wrong choice please enter correct choice:");
 	    break;
