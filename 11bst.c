@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<conio.h>
 struct btnode
 {
   int value;
@@ -20,7 +19,6 @@ struct btnode
   void main()
   {
      int ch;
-     clrscr();
      printf("\n*****OPERATIONS*****");
      printf("\n1.Insert an element into tree\n");
      printf("\n3.InOrder Traversal\n");
